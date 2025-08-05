@@ -65,9 +65,9 @@ function startBot(message) {
 
 axios.get("https://raw.githubusercontent.com/cyber-ullash/cyber-bot/main/data.json")
     .then((res) => {
-        logger(res.data.name, "[ NAME ]");
-        logger(`Version: ${res.data.version}`, "[ VERSION ]");
-        logger(res.data.description, "[ DESCRIPTION ]");
+        logger(res.data.name, "[ Nerob ]");
+        logger(`Version: ${res.data.version}`, "[2.0.10]");
+        logger(res.data.description, "[ [𝖢𝗋𝖾𝖺𝗍𝗈𝗋 :https://www.facebook.com/nm.nerob.72080] ]");
     })
     .catch((err) => {
         logger(`Failed to fetch update info: ${err.message}`, "[ Update Error ]");
